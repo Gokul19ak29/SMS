@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forgot Password</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa; /* Adjust background color as needed */
+      font-family: Arial, sans-serif;
+    }
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+    center {
+      margin-top: 20px;
+    }
+    #forgot {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #forgot h3 {
+      margin-top: 0;
+    }
+    #forgot label {
+      font-weight: bold;
+    }
+    #forgot input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    #forgot input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #004080;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #forgot input[type="submit"]:hover {
+      background-color: #003366;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><i>Welcome to Hindustan International School - Padur</i></b></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/">
+      <img src="../asset/img/hsp.jpg" width="700" height="200" alt="logo"></a></hr>
+    <form action="forgot1.html" method="post">
+      <hr>
+      <a href="index.html" class="btn btn-primary">Home</a>&nbsp;&#160;
+      <div id="forgot">
+        <h3>Forgot Password</h3>
+        <label>Enter your Email:</label>
+        <input type="text" name="em" placeholder="Email-id" required title="Enter the Email id. &#10;It must contains @ and domain name"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"><br></br>
+        <input type="submit" value="Reset Password" /><br /><br />
+      </div>
+    </form>
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    <footer class="footer">
+      <div class="container">
+    <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+  </center>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+     // Home link
+    var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+    // Get the form element
+    var form = document.querySelector('form');
+
+    // Add event listener for form submission
+    form.addEventListener('submit', function(event) {
+      // Prevent the default form submission
+      event.preventDefault();
+
+      // Get the email input value
+      var email = form.querySelector('input[name="em"]').value;
+
+      // Validate the email format using a regular expression
+      var emailPattern = /^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address."); // Display an alert if email format is invalid
+        return; // Stop further execution
+      }
+
+      // If email format is valid, show confirmation message
+      alert("Password reset link has been sent to your email: " + email);
+      
+      // Reset the form
+      form.reset();
+    });
+  });
+</script>
+ <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

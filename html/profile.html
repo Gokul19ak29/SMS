@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Login</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Your custom CSS styles */
+    body {
+      background-color: #e6f7ff;
+      font-family: Arial, sans-serif;
+    }
+
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+
+    center {
+      margin-top: 20px;
+    }
+
+    header h1 {
+      margin-top: 20px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    div {
+      margin-bottom: 20px;
+    }
+
+    div h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    div ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    div ul li {
+      margin-bottom: 10px;
+    }
+
+    img {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><B><I> Welcome to Hindustan International School - Padur</B><I></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/"> <img src="../asset/img/hsp.jpg"width="700" height="200" alt="logo"></a>
+    <form action="st1.html" method="post">
+        <header>
+            <h1>Student Portal</h1>
+            <nav>
+              <a href="index.html" class="btn btn-primary">Home</a>&nbsp;&#160;
+              <a href="course.html" class="btn btn-primary">Courses</a>&nbsp;&#160;
+              <a href="assignments.html" class="btn btn-primary">Assignments</a>&nbsp;&#160;
+              <a href="grade.html" class="btn btn-primary">Grades</a>&nbsp;&#160;
+              <a href="profile.html" class="btn btn-primary">Student Profile</a>&nbsp;&#160;
+              <a href="../asset/pdf/academicyear.pdf" class="btn btn-primary">Academic Year</a>&nbsp;&#160;
+            </nav>
+    </header>
+  </center>
+  </header>
+  <div class="container">
+    <h2>Student Profile</h2>
+    <div>
+      <h3>Personal Information</h3>
+      <ul>
+        <li><img src="../asset/img/PHOTO.jpg" width="120" height="150" alt="logo"></li>
+        <li></li><b>Name:</b> Goki</li>
+        <li><b>Student ID:</b> 23248003</li>
+        <li><b>Date of Birth:</b> January 1, 2007</li>
+        <li><b>Gender:</b> Male</li>
+        <li><b>Address:</b> 123 Rajiv Gandhi Salai(OMR),Padur,Chennai,Tamil Nadu,India</li>
+        <li><b>Email:</b> gokulpadmanaban01@gmail.com</li>
+        <li><b>Phone:</b> 8667590347</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Academic Information</h3>
+      <ul>
+        <li><b>Class:</b> 12</li>
+        <li><b>Section:</b> 12A</li>
+        <li><b>Student ID:</b> 23248003</li>
+        <li><b>Overall Grade:</b> A*</li>
+        <li><b>Class Teacher:</b> Dr. Sathish Kumar</li>
+        <li><b>Class Teacher Phone number:</b> 9512346782</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Parent Information</h3>
+      <ul>
+        <li><b>Father Name:</b> Padmanaban</li>
+        <li><b>Father Phone number:</b> 9876543210</li>
+        <li><b>Father Email ID:</b> shago@2619@gmail.com</li>
+        <li><b>Father Occupation:</b> Manager</li>
+        <li><b>Mother Name:</b> Thillai Maheswari</li>
+        <li><b>Mother Phone number:</b> 9638527410</li>
+        <li><b>Mother Email ID:</b> gosha1926@gmail.com</li>
+        <li><b>Mother Occupation:</b> Teacher</li>
+      </ul>
+    </div>
+  </div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer class="footer">
+    <div class="container">
+    <p>This portal provides access to various resources for Student.</p>
+    <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+  </footer>
+  <script>
+    // Home link
+    var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+  </script>
+  <!-- Bootstrap JS and jQuery (Optional, if needed) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

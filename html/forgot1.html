@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Reset</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa; /* Adjust background color as needed */
+      font-family: Arial, sans-serif;
+    }
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+    center {
+      margin-top: 20px;
+    }
+    form {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      margin-top: 0;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #004080;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #003366;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><i>Welcome to Hindustan International School - Padur</i></b></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/">
+      <img src="../asset/img/hsp.jpg" width="700" height="200" alt="logo" ></a>
+    <form action="login.html" method="post"><hr>
+      <a href="index.html" class="btn btn-primary">Home</a>&nbsp;&#160;
+      <h1>Password Reset link sent to your given mail id📧</h1>
+      <input type="submit" value="Go to login page" />
+    </form>
+    <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+  </center>
+    <footer class="footer">
+      <div class="container">
+    <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+     // Home link
+    var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+     // Get the form element
+    var form = document.querySelector('form');
+
+    // Add event listener for form submission
+    form.addEventListener('submit', function(event) {
+      // Prevent the default form submission
+      event.preventDefault();
+
+      // Display a confirmation message
+      alert("Redirecting to the login page.");
+
+      // Redirect to the login page
+      window.location.href = form.action;
+    });
+  });
+</script>
+<!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

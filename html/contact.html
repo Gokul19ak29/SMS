@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+    .container {
+      margin-top: 20px;
+    }
+    .contact-info {
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><i>Welcome to Hindustan International School- Padur</i></b></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/"> 
+      <img src="../asset/img/hsp.jpg" width="700" height="200" alt="logo">
+    </a>
+    <hr />
+    <a href="index.html">Home</a><hr><br>
+  </center>
+  <div class="container">
+    <center>
+      <h1>GET IN TOUCH WITH US</h1>
+      <p>If you have any questions regarding programs, facilities or have requests or
+      suggestions to make, feel free to give us a call or fill out the form below. 
+      Request for a campus visit by submitting the form below.</p>
+    </center>
+
+    <h2>Contact Us</h2>
+
+    <div class="contact-info">
+      <h3>ADMIN OFFICE</h3>
+      <p>#40, GST Road,</p>
+      <p>St.Thomas Mount,Guindy,</p>
+      <p>Chennai.</p>
+    </div>
+
+    <div class="contact-info">
+      <h3>PADUR CAMPUS</h3>
+      <p># 100, Veeranam Road,</p>
+      <p>Padur, OMR, </p>
+      <p>Chennai – 603 103</p>
+    </div>
+
+    <div class="contact-info">
+      <h2>Email</h2>
+      <p>info.his@hindustanschools.in</p>
+    </div>
+
+    <div class="contact-info">
+      <h2>Phone</h2>
+      <p>+91 44 27471133, 44, 55</p>
+    </div>
+  </div>
+
+  <center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+  </center>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Contact Form Submission
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        // Display alert message
+        alert('Thank you for contacting us. We will get back to you soon!');
+        // Reset form fields
+        document.getElementById('contactForm').reset();
+      });
+    });
+    // Home link
+    var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+            var imageLink = document.querySelector('img[src="../asset/img/hsp.jpg"]');
+            if (imageLink) {
+                imageLink.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default action (opening the link)
+                    alert("You clicked on the school logo. Redirecting you to the homepage.");
+                    // Redirect to the homepage after showing the alert
+                    window.location.href = "https://hindustaninternationalschools.in/";
+                });
+            }
+        });
+</script>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

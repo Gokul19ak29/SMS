@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Portal</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+
+    center {
+      margin-top: 20px;
+    }
+
+    main {
+      margin-top: 20px;
+    }
+
+    main h2 {
+      margin-bottom: 20px;
+    }
+
+    main h3 {
+      margin-top: 30px;
+    }
+
+    main a {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><i>Welcome to Hindustan International School - Padur</i></b></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/">
+      <img src="../asset/img/hsp.jpg" width="700" height="200" alt="logo" ></a>
+    <form action="st1.html" method="post">
+      <hr />
+  <h1>Teacher Portal</h1>
+  <a href="index.html" class="btn btn-primary">Home</a>&nbsp;&nbsp;&nbsp;
+  <a href="teachercourse.html" class="btn btn-primary">Courses</a>&nbsp;&nbsp;&nbsp;
+  <a href="tprofile.html" class="btn btn-primary">Profile</a>&nbsp;&nbsp;&nbsp;
+  <a href="teachercs.html" class="btn btn-primary">Class Schedule</a>&nbsp;&nbsp;&nbsp;
+  <a href="tclassstudent.html" class="btn btn-primary">Class Students</a>&nbsp;&nbsp;&nbsp;
+  <a href="../asset/pdf/academicyear.pdf" class="btn btn-primary">Academic Year</a>
+  </header>
+</center>
+
+  <main>
+    <center>
+      <h2>COURSES</h2>
+      <hr>
+
+      <h3>English</h3>
+      <a href="../asset/pdf/English.pdf" class="btn btn-info">Syllabus</a>
+
+      <hr>
+
+      <h3>Mathematics</h3>
+      <a href="../asset/pdf/maths.pdf" class="btn btn-info">Syllabus</a>
+
+      <hr>
+
+      <h3>Biology</h3>
+      <a href="../asset/pdf/bio.pdf" class="btn btn-info">Syllabus</a>
+
+      <hr>
+
+      <h3>Chemistry</h3>
+      <a href="../asset/pdf/chem.pdf" class="btn btn-info">Syllabus</a>
+
+      <hr>
+
+      <h3>Physics</h3>
+      <a href="../asset/pdf/phys.pdf" class="btn btn-info">Syllabus</a>
+
+      <hr>
+
+      <h3>Computer Science</h3>
+      <a href="../asset/pdf/cs.pdf" class="btn btn-info">Syllabus</a>
+
+      <hr>
+
+    </center>
+  </main>
+
+  <center>
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer class="footer">
+      <div class="container">
+    <p>This portal provides access to various resources for Teachers.</p>
+    <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+  </center>
+  <script>
+     // Home link
+    var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+    </script> 
+    <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

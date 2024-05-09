@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #e6f7ff;
+      font-family: Arial, sans-serif;
+    }
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+    main {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color: #e6f7ff;
+      font-family: Arial, sans-serif;
+    }
+    main h2 {
+      margin-top: 20px;
+    }
+    main ul {
+      list-style: none;
+      padding: 0;
+    }
+    main ul li {
+      margin-bottom: 20px;
+    }
+    main ul li span {
+      display: block;
+      margin-top: 5px;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><i>Welcome to Hindustan International School - Padur</i></b></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/">
+      <img src="../asset/img/hsp.jpg" width="700" height="200" alt="logo"></a>
+    <form action="st1.html" method="post">
+      <hr />
+  </center>
+  <header>
+    <h1 class="text-center">Student Portal</h1>
+    <nav class="text-center">
+      <a href="index.html" class="btn btn-primary">Home</a>&nbsp;&#160;
+      <a href="course.html" class="btn btn-primary">Courses</a>&nbsp;&#160;
+      <a href="assignments.html" class="btn btn-primary">Assignments</a>&nbsp;&#160;
+      <a href="grade.html" class="btn btn-primary">Grades</a>&nbsp;&#160;
+      <a href="profile.html" class="btn btn-primary">student Profile</a>&nbsp;&#160;
+      <a href="../asset/pdf/academicyear.pdf" class="btn btn-primary">Academic Year</a>&nbsp;&#160;
+    </nav>
+  </header>
+<center>
+  <main>
+    <h2 class="text-center">COURSES</h2>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="card-title">English</h3>
+              <p class="card-text"><b><i>Handling staff - Gayathri</i></b></p>
+              <a href="../asset/pdf/English.pdf" class="card-link">Syllabus</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="card-title">Mathematics</h3>
+              <p class="card-text"><b><i>Handling staff - Shanthi</i></b></p>
+              <a href="../asset/pdf/maths.pdf" class="card-link">Syllabus</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="card-title">Biology</h3>
+              <p class="card-text"><b><i>Handling staff - Sangeetha</i></b></p>
+              <a href="../asset/pdf/bio.pdf" class="card-link">Syllabus</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="card-title">Chemistry</h3>
+              <p class="card-text"><b><i>Handling staff - Krishnamoorthy</i></b></p>
+              <a href="../asset/pdf/chem.pdf" class="card-link">Syllabus</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="card-title">Physics</h3>
+              <p class="card-text"><b><i>Handling staff - Pavithra</i></b></p>
+              <a href="../asset/pdf/phys.pdf" class="card-link">Syllabus</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h3 class="card-title">Computer Science</h3>
+              <p class="card-text"><b><i>Handling staff - Uma Maheswari</i></b></p>
+              <a href="../asset/pdf/cs.pdf" class="card-link">Syllabus</a>
+            </div>
+          </div>
+        </div>
+        </main>
+</center>
+
+  <center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="footer">
+      <div class="container">
+    <p>This portal provides access to various resources for students.</p>
+    <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+  </center>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Home link
+    var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+
+    // Courses link
+    var coursesLink = document.querySelector('a[href="course.html"]');
+    if (coursesLink) {
+      coursesLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("View available courses here."); // Display an alert message
+        // Redirect to the Courses page after showing the alert
+        window.location.href = coursesLink.href;
+      });
+    }
+
+    // Assignments link
+    var assignmentsLink = document.querySelector('a[href="assignments.html"]');
+    if (assignmentsLink) {
+      assignmentsLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("View your assignments here."); // Display an alert message
+        // Redirect to the Assignments page after showing the alert
+        window.location.href = assignmentsLink.href;
+      });
+    }
+
+    // Grades link
+    var gradesLink = document.querySelector('a[href="grade.html"]');
+    if (gradesLink) {
+      gradesLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("View your grades here."); // Display an alert message
+        // Redirect to the Grades page after showing the alert
+        window.location.href = gradesLink.href;
+      });
+    }
+
+    // Profile link
+    var profileLink = document.querySelector('a[href="profile.html"]');
+    if (profileLink) {
+      profileLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("View your student profile here."); // Display an alert message
+        // Redirect to the Profile page after showing the alert
+        window.location.href = profileLink.href;
+      });
+    }
+
+    // Academic Year PDF link
+    var academicYearLink = document.querySelector('a[href="../asset/pdf/academicyear.pdf"]');
+    if (academicYearLink) {
+      academicYearLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("View the academic year schedule here."); // Display an alert message
+        // Redirect to the Academic Year PDF after showing the alert
+        window.location.href = academicYearLink.href;
+      });
+    }
+  });
+     document.addEventListener('DOMContentLoaded', function() {
+            var imageLink = document.querySelector('img[src="../asset/img/hsp.jpg"]');
+            if (imageLink) {
+                imageLink.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default action (opening the link)
+                    alert("You clicked on the school logo. Redirecting you to the homepage.");
+                    // Redirect to the homepage after showing the alert
+                    window.location.href = "https://hindustaninternationalschools.in/";
+                });
+            }
+        });
+</script>
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

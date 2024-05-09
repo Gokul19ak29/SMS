@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Portal</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+
+    center {
+      margin-top: 20px;
+    }
+
+    .container {
+      margin-top: 20px;
+    }
+
+    .container h2 {
+      margin-bottom: 20px;
+    }
+
+    .container table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #dee2e6;
+    }
+
+    .container th, .container td {
+      border: 1px solid #dee2e6;
+      padding: 8px;
+      text-align: left;
+    }
+
+    .container th {
+      background-color: #f8f9fa;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><i>Welcome to Hindustan International School - Padur</i></b></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/"> 
+      <img src="../asset/img/hsp.jpg" width="700" height="200" alt="logo"></a>
+    <form action="st1.html" method="post">
+      <hr />
+  <h1>Teacher Portal</h1>
+  <a href="index.html" class="btn btn-primary">Home</a>&nbsp;&nbsp;&nbsp;
+  <a href="teachercourse.html" class="btn btn-primary">Courses</a>&nbsp;&nbsp;&nbsp;
+  <a href="tprofile.html" class="btn btn-primary">Profile</a>&nbsp;&nbsp;&nbsp;
+  <a href="teachercs.html" class="btn btn-primary">Class Schedule</a>&nbsp;&nbsp;&nbsp;
+  <a href="tclassstudent.html" class="btn btn-primary">Class Students</a>&nbsp;&nbsp;&nbsp;
+  <a href="../asset/pdf/academicyear.pdf" class="btn btn-primary">Academic Year</a>
+  </header>
+
+  <div class="container">
+    <h2>Teacher Class Schedule</h2>
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Class</th>
+          <th>Room</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>9:00 AM - 10:30 AM</td>
+          <td>Mathematics</td>
+          <td>Room 101</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>11:00 AM - 12:30 PM</td>
+          <td>Physics</td>
+          <td>Room 203</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>2:00 PM - 3:30 PM</td>
+          <td>Chemistry</td>
+          <td>Room 305</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <center>
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer class="footer">
+      <div class="container">
+    <p>This portal provides access to various resources for Teachers.</p>
+    <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+  </center>
+  <script>
+     // Home link
+    var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+    </script> 
+    <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

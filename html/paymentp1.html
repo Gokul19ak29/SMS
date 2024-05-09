@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>payment</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+
+    center {
+      margin-top: 20px;
+    }
+
+    header h1 {
+      margin-top: 20px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    div {
+      margin-bottom: 20px;
+    }
+
+    div h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .container {
+      text-align: center;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><I>Welcome to Hindustan International School- Padur</b></I></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/"> <br></br>
+      <img src="../asset/img/hsp.jpg" width="700" height="200" alt="logo"></a>
+    <form action="paymentp.html" method="post">
+      <hr />
+      <h1>Parent Portal</h1>
+      <nav>
+        <a href="index.html" class="btn btn-primary">Home</a>&nbsp;&#160;
+        <a href="coursep.html" class="btn btn-primary">Courses</a>&nbsp;&#160;
+        <a href="assignmentp.html" class="btn btn-primary">Assignments</a>&nbsp;&#160;
+        <a href="gradep.html" class="btn btn-primary">Grades</a>&nbsp;&#160;
+        <a href="profilep.html" class="btn btn-primary">Your child Profile</a>&nbsp;&#160;
+        <a href="../asset/pdf/academicyear.pdf" class="btn btn-primary">Academic Year</a>&nbsp;&#160;
+        <a href="paymentp.html" class="btn btn-primary">Payments</a><br></br>&nbsp;&#160;
+      </nav>
+  </center>
+  </header>
+  <title>Student Payment Portal</title>
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Payment Successful</h2>
+      <p>Thank you for your payment!</p>
+      <p>Your transaction has been successfully processed.</p>
+      <p>You will receive a confirmation email shortly.</p>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <center>
+      <footer class="footer">
+        <div class="container">
+      <p>This portal provides access to various resources for Parents.</p>
+      <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+    </center>
+    <script>
+     // Home link
+    var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+  </script>
+    <!-- Bootstrap JS and jQuery (Optional, if needed) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+  </body>
+
+  </html>

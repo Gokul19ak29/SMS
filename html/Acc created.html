@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #e6f7ff;
+      font-family: Arial, sans-serif;
+    }
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+    center {
+      margin-top: 20px;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <marquee scrollamount="5"><b><i>Welcome to Hindustan International School - Padur</i></b></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/" title="logo">
+      <img src="../asset/img/hsp.jpg" width="700" height="200" alt="logo">
+    </a>
+    <hr>
+    <h3>YOU REGISTERED SUCCESSFULLY 😊👍</h3>
+    <h4>Our Staff Will Contact You Shortly</h4>
+    <a href="index.html" class="btn btn-primary">HOME</a>
+  </center>
+</form>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <footer class="footer">
+    <div class="container">
+  <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+  <script>
+    // JavaScript function to display an alert when the page loads
+    window.onload = function() {
+      alert("Thank you for registering. Our staff will contact you shortly.");
+    };
+    document.addEventListener('DOMContentLoaded', function() {
+            var imageLink = document.querySelector('img[src="../asset/img/hsp.jpg"]');
+            if (imageLink) {
+                imageLink.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default action (opening the link)
+                    alert("You clicked on the school logo. Redirecting you to the homepage.");
+                    // Redirect to the homepage after showing the alert
+                    window.location.href = "https://hindustaninternationalschools.in/";
+                });
+            }
+        });
+          var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+  </script>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

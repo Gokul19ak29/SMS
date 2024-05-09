@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Login</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #e6f7ff;
+      font-family: Arial, sans-serif;
+    }
+
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+
+    center {
+      margin-top: 20px;
+    }
+
+    #login {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 300px;
+    }
+
+    #login h3 {
+      margin-top: 0;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><i>Welcome to Hindustan International School - Padur</i></b></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/">
+      <img src="../asset/img/hsp.jpg" width="700" height="200" alt="logo"></a>
+    <form action="teacher1.html" method="post">
+      <hr />
+      <a href="index.html"class="btn btn-primary">Home</a><hr><br>
+      <div id="login">
+        <h3>Teacher Login</h3><br>
+        Email: <input type="text" name="em" class="form-control" placeholder="Email-id" required
+          title="Enter the Email id. It must contains @ and domain name" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+        <br>
+        Password: <input type="password" id="lpass" name="lpass" class="form-control" required
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="It must contain at least one digit (0-9). It must contain at least one lowercase letter (a-z). It must contain at least one uppercase letter (A-Z). It must be at least 8 characters in length."
+          placeholder="Enter the Password" />
+        <br />
+        <input type="submit" value="Login" class="btn btn-primary" /><br /><br />
+        <a href="forgot.html" target="_blank">Forgot password?</a> <br /><br />
+      </div>
+      <br><br><br><br><br><br><br><br><br><br>
+      <footer class="footer">
+        <div class="container">
+      <p>This portal provides access to various resources for Teachers.</p>
+      <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+    </form>
+  </center>
+  <script>
+     // Home link
+    var homeLink = document.querySelector('a[href="index.html"]');
+    if (homeLink) {
+      homeLink.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default action (opening the link)
+        alert("Are you sure you want to leave this page?"); // Display an alert message
+        // No redirection needed as it's the current page
+          window.location.href = homeLink.href;
+      });
+    }
+    </script> 
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
