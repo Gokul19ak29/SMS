@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Portal</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #e6f7ff;
+      font-family: Arial, sans-serif;
+    }
+
+    marquee {
+      background-color: #004080;
+      color: #ffffff;
+      padding: 5px;
+    }
+
+    center {
+      margin-top: 20px;
+    }
+
+    header h1 {
+      margin-top: 20px;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    div {
+      margin-bottom: 20px;
+    }
+
+    div h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    div ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    div ul li {
+      margin-bottom: 10px;
+    }
+
+    img {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    .footer {
+      margin-top: 20px;
+      background-color: #004080;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+    }
+    </style>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><I>Welcome to Hindustan International School- Padur</b></I></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/"> <br></br>
+      <img src="../asset/img/hsp.jpg" width="700" height="200" ></a>
+      <form action="paymentp1.html" method="post">
+<hr />
+</body>
+<h1 class="text-center">Parent Portal</h1>
+<div class="container">
+    <a href="index.html" class="btn btn-primary">Home</a>&nbsp;&#160;
+    <a href="coursep.html" class="btn btn-primary">Courses</a>&nbsp;&#160;
+    <a href="assignmentp.html" class="btn btn-primary">Assignments</a>&nbsp;&#160;
+    <a href="gradep.html" class="btn btn-primary">Grades</a>&nbsp;&#160;
+    <a href="profilep.html" class="btn btn-primary">Your child Profile</a>&nbsp;&#160;
+    <a href="../asset/pdf/academicyear.pdf" class="btn btn-primary">Academic Year</a>&nbsp;&#160;
+    <a href="paymentp.html" class="btn btn-primary">Payments</a><br></br>&nbsp;&#160;
+</div>
+    <title>Student Payment Portal</title>
+   
+    <div class="container">
+        <h2>Student Payment Portal</h2>
+        <form action="#" method="post">
+            <label for="student_name">Student Name:</label>
+            <input type="text" id="student_name" name="student_name" placeholder="Enter student name" title="Enter student name" required><br><br>
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" placeholder="Enter student id" title="Enter student id.&#10;Eg:-23248002" required pattern="[0-9]{8}"><br><br>
+            <label for="payment_amount">Payment Amount:</label>
+            <input type="text" id="payment_amount" name="payment_amount" placeholder="Enter amount" title="Enter amount" required pattern="[0-9]+"><br><br>
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" placeholder="Enter your card number" title="Enter your card number" required pattern="[0-9._%+\-]{16}"><br><br>
+            <label for="expiry_date">Expiry Date:</label>
+            <input type="text" id="expiry_date" name="expiry_date" placeholder="MMYYYY" title="Eg:-11/2016" required pattern="[0-9]{6}"><br><br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="Eg:-123" title="Enter your card cvv number" required pattern=".{3}"><br><br>
+            <input type="submit" value="Make Payment" class="btn btn-primary"/>
+        </form></div><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <center>
+        <footer class="footer">
+          <div class="container">
+        <p>This portal provides access to various resources for Parents.</p>
+        <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+    </center>
+ 
+
+</body>
+<!-- Bootstrap JS and jQuery (Optional, if needed) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
