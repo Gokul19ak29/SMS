@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Portal</title>
+</head>
+
+<body>
+  <marquee scrollamount="5"><b><I>Welcome to Hindustan International School- Padur</b></I></marquee>
+  <center>
+    <a href="https://hindustaninternationalschools.in/" lt="logo" title="logo"> <br></br>
+      <img src="./asset/img/hsp.jpg" width="700" height="200"  alt="logo" title="logo" ></a>
+      <form action="paymentp1.html" method="post">
+<hr />
+<h1>Parent Portal</h1>
+
+    <a href="index.html">Home</a>&nbsp;&#160;
+    <a href="coursep.html">Courses</a>&nbsp;&#160;
+    <a href="assignmentp.html">Assignments</a>&nbsp;&#160;
+    <a href="gradep.html">Grades</a>&nbsp;&#160;
+    <a href="profilep.html">Your child Profile</a>&nbsp;&#160;
+    <a href="./asset/pdf/academicyear.pdf">Academic Year</a>&nbsp;&#160;
+    <a href="paymentp.html">Payments</a><br></br>&nbsp;&#160;
+</center>
+    <title>Student Payment Portal</title>
+   
+    <div class="container">
+        <h2>Student Payment Portal</h2>
+        <form action="#" method="post">
+            <label for="student_name">Student Name:</label>
+            <input type="text" id="student_name" name="student_name" placeholder="Enter student name" title="Enter student name" required><br><br>
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" placeholder="Enter student id" title="Enter student id.&#10;Eg:-23248002" required pattern="[0-9]{8}"><br><br>
+            <label for="payment_amount">Payment Amount:</label>
+            <input type="text" id="payment_amount" name="payment_amount" placeholder="Enter amount" title="Enter amount" required pattern="[0-9]+"><br><br>
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" placeholder="Enter your card number" title="Enter your card number" required pattern="[0-9._%+\-]{16}"><br><br>
+            <label for="expiry_date">Expiry Date:</label>
+            <input type="text" id="expiry_date" name="expiry_date" placeholder="MMYYYY" title="Eg:-11/2016" required pattern="[0-9]{6}"><br><br>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="Eg:-123" title="Enter your card cvv number" required pattern=".{3}"><br><br>
+            <input type="submit" value="Make Payment"/>
+        </form></div>
+      <center>
+        <p>This portal provides access to various resources for Parents.</p>
+        <p>&copy; 2024 Hindustan International School- Padur. All rights reserved.</p>
+    </center>
+ 
+
+</body>
+
+</html>
